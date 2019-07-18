@@ -102,3 +102,18 @@ Les objets crées sur python ne s'affichent pas dans l'onglet environnement mais
 - https://github.com/3mmaRand/useR2019_tutorial
 - https://3mmarand.github.io/useR2019_tutorial/#1
 
+
+## Il existe un outil qui permet de faire le lien entre R ou RMarkdown et Microsoft Word - StatTag
+
+Le développment de ce plugin pour Word est la coséquence de la frustration de l'auteur lorsque ce dernier envoyait un document RMarkdown a des collègues et ceux-ci lui envoyaient des corrections sur Word. A ce moment là la personne avait 2 choix (l'un aussi mauvais que l'autre):
+
+- Incorporer les corrections sur R Markdown
+- Continuer en utilisant Microsoft World
+
+StatTag permet d'incorporer l'output de logiciels tels que R, SAS et STATA et les incorporer comme des calculs sur Word.
+
+Voir la vidéo explicative ici : https://www.youtube.com/watch?v=K3QwG4LB9a4
+
+*Pour plus d'informations :* https://sites.northwestern.edu/stattag/
+
+
