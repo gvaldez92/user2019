@@ -1,15 +1,16 @@
 Ce que UNISIS doit retenir de UseR 2019!
 ================
 
--   [Utiliser des addins sur R Studio pour simplifier des tâches](#utiliser-des-addins-sur-r-studio-pour-simplifier-des-tâches)
+-   [Il est possible d’améliorer son utilisation de RStudio à l’aide d’addins](#il-est-possible-daméliorer-son-utilisation-de-rstudio-à-laide-daddins)
     -   [Utiliser rstudioapi comme base](#utiliser-rstudioapi-comme-base)
     -   [Faire un addin](#faire-un-addin)
+-   [Il est possible de traiter des objets sur R avec Python et viceversa.](#il-est-possible-de-traiter-des-objets-sur-r-avec-python-et-viceversa.)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 ![](images/Toulouse.jpg)
 
-Utiliser des addins sur R Studio pour simplifier des tâches
------------------------------------------------------------
+Il est possible d’améliorer son utilisation de RStudio à l’aide d’addins
+------------------------------------------------------------------------
 
 ![](images/remedy_example.gif)
 
@@ -77,3 +78,23 @@ italicsr <- function() enclose("_")
 Autre exemple d'addin : datapasta (réduit la résistance associée au copy + paste vers R)
 
 ![](images/datapasta.gif)
+
+*Plus d'informations sur :* <https://github.com/ColinFay/user2019workshop>
+
+Il est possible de traiter des objets sur R avec Python et viceversa.
+---------------------------------------------------------------------
+
+A l'aide du package `reticulate` , R Studio 1.2 et Anaconda 3 on peut combiner les deux langages de programmation sur le même script R.
+
+Utiliser `reticulate::use_python()` pour spécifier la version de python sur laquelle on veux travailler (et qui se trouve sur l'ordinateur).
+
+La fonction `repl_python()` crée un console Python interactive sur R. Les objects crés sur Python sont disponibles sur R et viceversa.
+
+![](images/python.png)
+
+Les objets crées sur python ne s'affichent pas dans l'onglet environnement mais ce trouvent bien là.
+
+*Plus d'informations sur :*
+
+-   <https://github.com/3mmaRand/useR2019_tutorial>
+-   <https://3mmarand.github.io/useR2019_tutorial/#1>
