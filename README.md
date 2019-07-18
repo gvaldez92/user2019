@@ -1,7 +1,7 @@
 Ce que UNISIS doit retenir de UseR 2019!
 ================
 
-<!-- UseR2019.md is generated from UseR2019.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 ![](images/Toulouse.jpg)
 
 Utiliser des addins sur R Studio simplifier des tâches
