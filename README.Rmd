@@ -105,7 +105,7 @@ Les objets crées sur python ne s'affichent pas dans l'onglet environnement mais
 
 ## Il existe un outil qui permet de faire le lien entre R ou RMarkdown et Microsoft Word - StatTag
 
-Le développment de ce plugin pour Word est la coséquence de la frustration de l'auteur lorsque ce dernier envoyait un document RMarkdown a des collègues et ceux-ci lui envoyaient des corrections sur Word. A ce moment là la personne avait 2 choix (l'un aussi mauvais que l'autre):
+Le développment de ce plugin pour Word est la coséquence de la frustration de l'auteur lorsque ce dernier envoyait un document RMarkdown à des collègues et ceux-ci lui envoyaient des corrections sur Word. A ce moment là la personne avait 2 choix (l'un aussi mauvais que l'autre):
 
 - Incorporer les corrections sur R Markdown
 - Continuer en utilisant Microsoft World
@@ -115,5 +115,32 @@ StatTag permet d'incorporer l'output de logiciels tels que R, SAS et STATA et le
 Voir la vidéo explicative ici : https://www.youtube.com/watch?v=K3QwG4LB9a4
 
 *Pour plus d'informations :* https://sites.northwestern.edu/stattag/
+
+## Il est possible de créer des templates de scripts RMarkdown en utilisant le package usethis
+
+![](images/usethis.png)
+
+Usethis est un package qui permet de créer des fichiers, des projets, des packages, des addins et autres depuis la console. Il a été conçu pour automatiser des tâches répétitives lorsque l’on commence un nouveau projet comme créer un README, créer une LICENCE, créer ou cloner un repo github, créer un fichier RMarkdown avec la même structure que d’autres qui ont déjà été faits, etc.
+
+Voir la démo : https://www.youtube.com/watch?v=3vsPMyTfT8I&feature=youtu.be
+
+Pour créer un template Rmarkdown il faut simplement suivre ces pas :
+
+- Créer un package (Nouveau projet → Package)
+- `usethis::use_rmarkdown_template("montemplate")`
+- Mettre à jour le document yaml et Rmd qui sont crées dans le dossier `inst/rmarkdown/templates/montemplate`
+- Installer le package
+- Créer un nouveau R Markdown File > New File > RMarkdown > From Template
+
+Il est possible d’ajouter des fichiers annexes (tel que des images) au Rmarkdown en ajoutant des fichiers au dossier “skeleton” et en changeant `create_dir` du `yaml` de `FALSE` a `TRUE`.
+
+Ceci peut être utile pour l'annuaire statistique ou si on venait à faire plusieures présentations avec RMarkdown.
+
+Pour faire des templates de scripts R il faut passer par des snippets.
+
+Cela vaut la peine de s'intéresser à l'utilisation de usethis. Il a déjà été incorporé dans la codebase comme package compatible avec les autres.
+
+
+
 
 
